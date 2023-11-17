@@ -1,0 +1,82 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#010758,#490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero h1
+{
+    font-size:large;
+    font-weight: 200;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    color:gold;
+    font-style: italic;
+}
+.hero h1 span{
+    color: darkmagenta;
+    font-size: larger;
+}
+textarea
+{
+    width: 300px;
+    height: 100px;
+    background: bisque;
+    box-shadow: 1cm;
+    border-color: brown;
+    border-spacing: 2cm;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: medium;
+    font-style: oblique;
+    border-style: double;
+     border-width: medium;
+     resize: vertical;
+}
+.row select
+{ flex: 1;
+  color: #490d61;
+  background:chartreuse;
+ height: 50px;
+ padding: 0 20px;
+ outline: 0;
+ border:0px;
+ border-radius: 35px;
+ appearance: none;
+ background-image: url(images/dropdown.png);
+ background-repeat: no-repeat;
+background-size: 15px;
+
+
+}
+.row button
+{
+    background-color: cyan;
+    width:70px;
+    color: crimson;
+    height: 30px;
+    padding: 0 20px;
+  
+    align-content: space-around;
+   
+   
+
+}
+button img{
+    height:15px ;
+    margin-right: 10px;
+    align-items: center;
+}
+
+
+
