@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="images/back.png" id="backbtn">
+        <img src="images/next.png" id="nextbtn">
+    </div>
+    <div class="gallery">
+        <div>
+            <span>
+                <img src="images/image-1.jpeg">
+            </span>
+            <span>
+                <img src="images/image-2.jpeg">
+            </span>
+            <span>
+                <img src="images/image-3.jpeg">
+            </span>
+        </div>
+        <div>
+            <span>
+                <img src="images/image-4.jpeg">
+            </span>
+            <span>
+                <img src="images/image-5.jpeg">
+            </span>
+        </div>
+        <div>
+            <span>
+                <img src="images/iamge-6.jpeg">
+            </span>
+        </div>
+    </div>
+
+    <script>
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backbtn");
+        let nextBtn = document.getElementById("nextbtn"); // Corrected the ID
+        scrollcontainer.addEventListener("wheel", (eve) => {
+            eve.preventDefault();
+            scrollcontainer.scrollLeft += eve.deltaY;
+        });
+        nextBtn.addEventListener("click",()=>{
+          
+             scrollcontainer.scrollLeft+=900;
+        });
+        backBtn.addEventListener("click",()=>{
+             scrollcontainer.scrollLeft-=900;
+        });
+    </script>
+</body>
+</html>
