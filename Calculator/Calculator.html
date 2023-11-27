@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="Styles.css">
+  </head>
+  <body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons" >
+            <button onclick="updateDisplay(7)">7</button>
+            <button onclick="updateDisplay(8)">8</button>
+            <button onclick="updateDisplay(9)">9</button>
+            <button class="operator"onclick="updateDisplay('/')">/</button>
+            <button onclick="updateDisplay(4)">4</button>
+            <button onclick="updateDisplay(5)">5</button>
+            <button onclick="updateDisplay(6)">6</button>
+            <button class="operator"onclick="updateDisplay('*')">*</button>
+            <button onclick="updateDisplay(1)">1</button>
+            <button onclick="updateDisplay(2)">2</button>
+            <button onclick="updateDisplay(3)">3</button>
+            <button class="operator"onclick="updateDisplay('-')">-</button>
+
+            <button class="double" onclick="updateDisplay(0)">0</button>
+            <button onclick="updateDisplay(7)">.</button>
+           
+            <button class="operator" onclick="updateDisplay('+')"  >+</button>
+            <button class="equal operator" onclick="calculateresult()" ondblclick="clearesult()">=</button>
+        </div>
+    </div>
+    <script>
+
+        var currentval='';
+        document.getElementById('display').innerHTML=currentval;
+
+        function updateDisplay( val)
+        {
+            currentval=currentval+val;
+            document.getElementById('display').innerHTML=currentval;
+        }
+
+        
+    
+        function calculateresult()
+        {
+             var myans=eval(currentval);
+             document.getElementById('display').innerHTML=myans;
+           
+        }
+        function clearesult()
+        {
+            var currentval='';
+            document.getElementById('display').innerHTML=currentval;
+        }
+        
+      </script>
+  </body>
+  
+</html>
