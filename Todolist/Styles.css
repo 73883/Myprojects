@@ -1,0 +1,46 @@
+body{
+    font-style: italic;
+    align-items: center;
+    
+}
+#main-heading
+{
+    text-align: center;
+    font-style: italic;
+    color:blueviolet
+}
+#mytask{
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    
+}
+#mydate
+{ height: 25px;
+    width: 100px;
+    padding-left: 20px;
+    margin: 10px;
+
+}
+#add-button
+{
+    height: 25px;
+    width: 50px;
+    margin: 30px;
+    background-color: green;
+}
+#div1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+    margin: 0;
+}
+#todoList
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
